@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVIGATION_BAR!</title>
+    <!-- NAVIGATION_BAR -->
+    <style>
+        
+    .navbar{
+        background-color: rgb(15, 234, 212);
+    }
+    .navbar ul{
+       /* this will prevent the overflow of parent elment and childe elements */
+        overflow: auto;
+        background-color: rgb(128, 213, 230);
+    }
+    .navbar  li{
+        float: left;
+        list-style: none;
+        margin: 3px 3px;
+        padding: 13px 20px;
+    }
+    .navbar a{
+        text-decoration: none;
+    }
+    .search{
+        float: right;
+        margin-top: 1px;
+    }
+    .navbar input{
+        border: solid blueviolet;
+        border-radius: 4px;
+        margin: 16px 67px;
+    }
+    </style> 
+<!-------------------------------------------------------------------------------------------------------------------- -->
+<!-- displaypropertie -->
+   <!-- <style> 
+    *{
+            box-sizing: border-box;
+        }
+    img{
+        display: block;
+        margin: auto;
+        width: 34px;
+        /* border: 2px solid black; */
+    }
+    header{
+        margin: auto;
+        border: 2px solid red;
+        width: 1100px;
+    
+        
+    }
+    .container {
+     /* border: 2px solid red; */
+     width: 1100px;
+     margin: auto;
+
+    }
+    h2{
+        text-align: center;
+        margin: 0px;
+    }
+    .box{
+        border:4px solid blue;
+        background-color:gray;
+        padding:23px;
+        margin: 4px 0px;
+        box-sizing: border-box;
+        
+        width: 33%;
+        display: inline-block;
+    }
+   </style>  -->
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+<!-- positioning  -->
+    <style> 
+.container{
+    border: solid red 2px;
+    background-color: aqua;
+    height: 3440px;
+}
+.box{
+    margin: 2px;
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    
+}
+#box3 { 
+    /* : position the element relative to its normal position and leave a gap at its normal position */
+    position: relative;
+    top: 35px;
+}
+#box4{ 
+    /* position the element relative to the position of its first parent */
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+#box2{ 
+    /* sticky: position the element relative to the user scroll position  */
+    position: sticky;
+    top: 3px;
+}
+#box5{
+    position: fixed;
+    right: 4px;
+    bottom: 4px;
+} 
+   </style>
+</head>
+<body>
+     <!-- NAVIGATION_BAR -->
+    <header>
+         <nav class="navbar"> 
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">CONTACE_US</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search here!">
+                </div>
+            </ul>
+        </nav> 
+    </header> 
+<!-- /* --------------------------------------------------------------------------------------------------------.   displaypropertie */ -->
+<hr>
+    <!-- <header class="top">
+
+    <img src="DRAIGON1.jpg" alt="">
+    <h2>My Blogs!</h2>
+</header>
+    <div class="container">
+        
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nesciunt reprehenderit rerum autem nostrum, commodi dolores molestias dolorum quas, quod fuga possimus similique. Quibusdam totam nisi odio. Quia quisquam, tempora corrupti incidunt impedit eum.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nesciunt reprehenderit rerum autem nostrum, commodi dolores molestias dolorum quas, quod fuga possimus similique. Quibusdam totam nisi odio. Quia quisquam, tempora corrupti incidunt impedit eum.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nesciunt reprehenderit rerum autem nostrum, commodi dolores molestias dolorum quas, quod fuga possimus similique. Quibusdam totam nisi odio. Quia quisquam, tempora corrupti incidunt impedit eum.</p>
+        </div>
+        
+    </div> --> 
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3 </div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+    </div>
+</body>
+</html>

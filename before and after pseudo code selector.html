@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseoudo code selector</title>
+    <style>
+        body { 
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        header::before{
+            content:"" ;
+            background: url('https://source.unsplash.com/random/900x700/?fruit') no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.5; /*makes image lite */
+
+            
+        }
+
+        section {
+            /* border: 2px solid red; */
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 23px;
+        }
+
+        .navigation {
+            display: flex;
+            flex-direction: row;
+         
+        }
+
+        /* section::after{ */
+        /* content: "this is content"; */
+        /* } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Service</li>
+                <li class="item">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to coding Broh!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt assumenda nihil tempora, delectus nisi
+            nulla sequi fuga, harum veritatis amet, exercitationem hic consequatur magni optio saepe dicta sint illum
+            sed quas et non. Consequuntur?</p>
+
+    </section>
+    <hr>
+</body>
+
+</html>

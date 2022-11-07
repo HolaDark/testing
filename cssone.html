@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning  Css </title>
+    <style> 
+    /* element selector */
+        span { background-color: hotpink;
+            color: blueviolet;
+        }
+        /* id selector */
+        #myid {
+            background-color: yellow;
+            color: red;
+        }
+        /* class selector */
+        .myclass {
+            background-color: purple;
+            color: white;
+        } 
+        /* grouping selecetor */
+        /*p,*/b {font-family: 'Open Sans', sans-serif;
+            background-color: green;
+            /* color: black; */
+            /* color: rgb(0, 255, 0); */
+            font-weight: bold;
+            /* font-size: 59px; */
+        }
+        em{ 
+            font-weight: bold;
+            /* color: green; */
+            color:rgb(255, 0, 30);
+            background-color: #f11111;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+        #firstpara{
+            background-color: green;
+            height: 100px;
+            width: 455px;
+            border-color: black;
+            border-style: solid;
+            border-radius:13px;
+
+        }
+        #secondpara{
+            background-color: green;
+            height: 100px;
+            width: 455px;
+            
+            /* border-color: 2px solid red  black gray green; */
+             border-top-left-radius: 20px;
+             border-top-right-radius: 10px;
+             border-bottom-right-radius: 30px;
+             border-bottom-left-radius: 8px;
+
+        }
+        #thirdpara{
+            width: 455px;
+            height: 100px;
+            background-image: url(Screenshot\ \(2\).png);
+            background-repeat: no-repeat;
+        
+            border: 2px solid red;
+        }
+    </style>
+    <style>
+        .container{
+            background-color: rgb(11, 235, 251);
+            border : 2px solid rgb(255, 89, 0);
+            padding:27px 89px 50px 10px; /*padding top right bottom left*/
+            margin: 12px 40px 29px 40px;/*margin top right bottom left*/
+             padding: 50px 20px ; /* padding: x(top/bottom) y(right/reft);*/
+             border-radius: 20px;
+             width: 224px;
+        }
+    </style>
+
+    <style>
+        *{
+    box-sizing: border-box;
+}
+.cantainer{
+    border: 2px solid black;
+    background-color: rgb(192, 236, 20);
+    width: 1000px;
+    margin: 33px auto; /* margin : x(top/bottom) y(right/left)*/
+}
+.item{
+    border: 2px solid red;
+    margin: 12px 13px;
+    padding: 20px 30px 20px 10px ;
+}
+#fruits{
+    float: left;
+    width: 47%;
+}
+#computer{
+    float: right;
+    width: 47%;
+}
+#stationary{
+    /* float: left; */
+    clear: both;
+    width: 98%;
+}
+h1,h2,h3,p{ text-align: center;
+    width: 320px;
+    margin: auto;
+
+}
+
+
+    </style>
+
+
+
+<style>
+.cintainer{
+    border: solid green;
+    background-color: aquamarine;
+    padding: 34px;
+    margin: 43px auto;
+    width: 666px;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    background-color: blanchedalmond;
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 4px;
+
+
+}
+a:hover{
+    background-color:blueviolet;
+    color: bisque;
+}
+button:hover{
+    background-color: blueviolet;
+    color: beige;
+}
+a:visited{
+    background-color:yellow;
+}
+a:active{
+    background-color: blue;
+
+}
+</style>
+<!-- ------------------------------------------------------------------------------------------------------------------------ -->
+<style>
+.navbar{
+    background-color:aqua;
+    border-radius: 10px;
+
+}
+.navbar ul{
+    overflow:auto;
+}
+.navbar li {
+     float: left;
+     list-style:none;
+     margin: 13px 20px;
+     color: wheat;
+
+ }
+
+ .navbar a{
+    text-decoration: none;
+    padding:3px 3px;
+
+ }
+ .navbar li a{
+    color:red;
+    text-decoration: none;
+    color: white;
+ }
+ .search{
+    float: right;
+    color: wheat;
+    padding: 12px 75px;
+
+ }
+ .navbar input{
+
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 129px;
+ }
+</style>
+</head>
+<body>
+    <img src="WIN_20221026_20_31_15_Pro.jpg" alt="">
+    <em>this is color tag of em normal , rgb , hexa</em>
+    <p style="background-color:black; color:green;" >p this is in line Css</p>
+    <p>p this is internal under head Css</p>
+    <strong>this is external css imported from another .css file </strong>
+    <br><br>
+    <span>element selector</span>
+    <h3 id="myid">this is id selector</h3>
+    <h3 class="myclass">this is class selecetor</h3>
+    <p>grouping selector</p>
+    <b>this is also grouping selector</b>
+   <hr>
+    <h1>border  ,background height width</h1>
+    <p id="firstpara">this is para one</p>
+    <p id="secondpara">this is para two</p>
+    <p id="thirdpara">this is para three</p>
+    
+    <hr>
+    <h1>Box Model</h1>
+<div class="container">
+    <h1>This is my heading of Box Model </h1>
+    <p id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos consequatur aut, dolor modi ipsa voluptates, sit illo culpa corporis, deleniti ipsam. Facilis, consequuntur!</p>
+</div>
+<div class="container">
+    <h1>This is my heading of Box Model </h1>
+    <p id="second ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos consequatur aut, dolor modi ipsa voluptates, sit illo culpa corporis, deleniti ipsam. Facilis, consequuntur!</p>
+</div>
+<div class="container">
+    <h1>This is my heading of Box Model </h1>
+    <p id="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos consequatur aut, dolor modi ipsa voluptates, sit illo culpa corporis, deleniti ipsam. Facilis, consequuntur!</p>
+</div>
+
+
+<hr>
+<h1>Allignment</h1>
+<div class="cantainer">
+    <h1>My Store!</h1>
+ <div id="fruits" class="item">
+    <h3>fruits</h3>
+    <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, maiores aperiam, neque atque sint placeat sequi eius quo odio repellat optio nisi doloremque quisquam consectetur beatae in corporis minima laborum?</p>
+ </div>
+ <div id="computer" class="item">
+    <h3>computer</h3>
+    <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, maiores aperiam, neque atque sint placeat sequi eius quo odio repellat optio nisi doloremque quisquam consectetur beatae in corporis minima laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sequi. Sequi explicabo temporibus molestiae! Nulla vel modi tempore officia. Repudiandae.</p>
+ </div>
+ <div id="stationary" class="item">
+    <h3>stationary</h3>
+    <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, maiores aperiam, neque atque sint placeat sequi eius quo odio repellat optio nisi doloremque quisquam consectetur beatae in corporis minima laborum?</p>
+ </div>
+
+</div>
+    <hr>
+    <div class="cintainer" id="cont1">
+        <h2>this is my heading link & button</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, in sint quasi magni optio suscipit provident adipisci fugiat quisquam accusamus deserunt molestiae aliquid. Architecto facilis dolore consequuntur fugit velit iste dolores eos, iusto quam aut nisi possimus incidunt laudantium eligendi quae commodi vitae!</p>
+        <a href="http://www.google.com" target="_blank" class="btn">Read more</a>
+        <button class="btn">contact us</button>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="search">
+            </div>
+            </ul>
+        </nav>
+    </header>
+ 
+</body>
+</html>

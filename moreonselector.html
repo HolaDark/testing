@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            text-align: center;
+            color: black;
+            font-weight: bold;
+
+        }
+        div p{
+            background-color: green;
+            font-weight: bold;
+            color: yellow;
+        }
+        /* if p is contained by any li which is contained by div */
+        div li p{
+         list-style: none;
+         color: brown;
+
+        }
+        /* if p right inside div css will br aplied */
+        div > p{
+            background-color: aquamarine;
+        }
+        /* if p is right after div;;; p is the next sibling of div */
+        div+p{
+            background-color: black;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="items"><p>this is another paragrap inside li</p></li>
+            </ul>
+            <p>this is a paragrap direct chiled of div</p>
+        </div>
+        <p>this is another paragrap</p>
+    </div>
+    <p>this is outermost paragrap</p>
+    
+</body>
+</html>

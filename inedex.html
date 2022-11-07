@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Msf basic website</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        header{
+            color: blueviolet;
+        }
+        .container{
+            border: 2px solid pink;
+            height: 300px;
+            /* flex is a one dimensinoal layout method for layinf out items in row or columns */
+            display: flex; /*(initializing the container as flex box!)intitalily u need this statement to use flex*/
+            /* flex-direction: row;this gives the direction to your flex box(by default is set to row) */
+            /* flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse; */
+          flex-direction: row;
+            /* flex-wrap:wrap; used for responsiveness of web site it helps in wraping the elements in flex box (by default is :no wrap) */
+            /* flex-wrap: wrap-reverse;   *//*to wrap in revers direction */
+           
+           
+           
+            /* flex-flow: row wrap; /* in this we can set flex direction and wrap styles*/
+
+
+            /* justify-content: center;  use to center the elements like box and etc */
+            /* justify-content: space-between ; used to give space between the box not at start and end of the box */
+            /* justify-content: space-evenly;evenly gives space to all elements */
+            /* justify-content:space-around;this will provide margin to every element start and ends will be normal but in between space will be added more bcz of the two element margi is combined */
+            
+            
+            
+            /* align-items: center; vertically makes center! */
+
+            /* align-items: flex-end;alings at bottom of flex box */
+
+            /* align-items: flex-start;(by default is set to flex-start) aligns at top of flex box */
+
+            /* align-items: stretch; streaches the elements with respecting its original dimentions */
+            
+        }
+        .box{
+            border: 2px;
+            height: 120px;
+            width: 120px;
+           margin: 4px;
+        }
+        .box#box1{
+            border: 2px solid black;
+            background-color: gray;
+            position: relative;
+            /* top: 49px; */
+            /* z-index: -35px; */
+
+            order: 9; /* orders the element the high orderd element will be placed at the end 
+            (Higer the order later it shows up the containerS)*/
+
+            flex-grow: 2;
+        }
+        .box#box2{border: 2px solid black;
+            background-color: gold;
+            position: relative;
+            /* top: 14px; */
+            /* z-index: -165px; */
+            /* flex-grow: 1; specifies how much the item will grow relative to the rest of the flexible items inside the same container */
+
+            flex-shrink: 3;/*shrinks the emelent when u make screen minimize*/
+            flex-basis: 400px;
+
+        }
+        .box#box3{border: 2px solid black;
+            background-color:green;
+            /* visibility: hidden; */
+            /* display: none; */
+
+            order: 1;
+        }
+        .box#box4{border: 2px solid black;
+            background-color: orange;
+            
+        }
+        .box#box5{border: 2px solid black;
+            background-color: orange;
+        }
+        .box#box6{border: 2px solid black;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>this is felx box</h1>
+    </header>
+    <div class="container">
+        <div class="box" id="box1">1.forst box</div>
+        <div class="box" id="box2">2.second box</div>
+        <div class="box" id="box3">3.third box</div>
+        <!-- <div class="box" id="box4">4.fourth box</div>
+        <div class="box" id="box4">5.fourth box</div> -->
+        
+    </div>
+    
+
+    
+</body>
+</html>

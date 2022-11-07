@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <!-- meta tag provides infomation about information -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is description">
+    <title>Mk Bro!'s Web</title>
+    <!-- for linking external css -->
+    <link rel="stylesheet" href="mkcs.css">
+    <!-- for linking external java script -->
+    <script src="mkJavaScript.js"></script>
+    
+        <!-- id >> # -->
+    <style>
+        #myHeader{background-color: lightblue;
+        color: black;
+    padding: 40px;
+text-align:center; }
+    </style>
+    <div id="myspace"> &nbsp;</div>
+    <style> 
+    </style>
+    <!-- class >> . -->
+    <style>
+        .city{
+
+            background-color: black;
+            color: green;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="myspace">hello</h1>
+    <!-- the contais of the web page is held by body  -->
+    <h1 id="myHeader">this is derived from  id </h1>
+    <h1 style="border: 2px solid red;">HelloBro!</h1>
+    <h2 id="myHeader">HelloBro!</h2>
+    <h3 class="city">this is derived from class HelloBro!</h3>
+    <h4 class="city">this is also derived from class HelloBro!</h4>
+    <h5>HelloBro!</h5>
+    lorem dummy txt 8 words
+    <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
+    <h7>HelloBro!7</h7>
+    <p>HelloBro! para</p>
+    <em style="border: 2px solid red ">this is em tag</em>
+    <strong style="border: 2px solid red "> this is strong tag</strong>
+    <!-- to add links -->
+     <a style="border: 2px solid red " href="https://google.com">go to google.com click here</a>
+     <br>
+     <!-- to open a link in new tab -->
+     <a href="https://google.com" target="=_blank">go to google.com click here</a>
+     <br>
+    <!-- to link internal links -->
+<a href="/internallinkanotherhtml.html" target="=_blank">internal links</a>
+<br>
+<!-- image is not present hence alt txt is shown -->
+<img class="city"  src="one.png" alt="Error image is loading!" width="430" height="300">
+<br>
+<img class="city" src="C:\Users\MkHee\Pictures\Saved Pictures\one" alt="Error image is loading!" width="980" height="900">
+<!-- orderd list -->
+<h3>orderd list</h3>
+<ol type="A" style="border: 2px solid red ">
+    <li>Mk</li>
+    <li>HEERA</li>
+    <li>BRO!</li>
+</ol>
+<!-- unorderd list -->
+
+<h3>unorderd list</h3>
+<ul type="circle" style="border: 2px solid red " >
+    <li style="border: 2px solid red ">Mk</li>
+    <li>HEERA</li>
+    <li>BRO!</li>
+</ul>
+
+<table style="border: 2px solid red "> 
+    <thead style="border: 2px solid gray">
+        <tr style="border: 2px solid blue">
+        <th style="border: 2px solid blue ">reg no</th>
+        <th style="border: 2px solid red ">name</th>
+        <th style="border: 2px solid red ">phone</th>
+    </thead>
+    <tbody>
+        <td>123</td>
+        <td>Bro!</td>
+        <td>0945988920349</td>
+       <tr>
+        <td>183</td>
+        <td>Dark</td>
+        <td>0952098342</td>
+        </tr>
+       </tbody>
+</table>
+
+<h2>this is form </h2>
+<form action="backend.php">
+    <div>
+        <!-- Name is tyope 
+        type is which type input u want to insert 
+        name is usd for identify the objets in the background  for backend . php  -->
+        <label for="name"> Name</label>
+        <!-- label is used to selection perpose if we click on any end if the input take it will automatically selects the whole tag
+        for is the id of input tag name 'Name' -->
+    <input type="text" name="myname" id="name">
+    </div>
+    <br>
+    <div>
+    role:<input type="text" name="myrole">
+    </div>
+    <br>
+    <div>
+    Email:<input type="email" name="myemail">
+    </div>
+    <br>
+    
+    <div>
+        calender:   <input type="date" name="mydate" style="border: 2px solid red ">
+    </div>
+    <br>
+    <div>
+        Bonus:<input type="number" name="myNumber" >
+    </div>
+    <br>
+    <div> <label for="eligible" style="border: 2px solid red "> checkbox:</label>
+        <input type="checkbox" name="myCheckbox,eligiblity" id="eligible">
+    </div>
+    <br>
+    <div>
+        Gender:Male <input  type="radio" name="myGender" > FeMale <input type="radio" name="myGender" >other <input type="radio" name="myGender" >
+    </div>
+    <br>
+    <div>
+        Write about your self : <br><textarea name="myText" id="" cols="30" rows="10"></textarea>
+        
+    </div>
+    <br>
+    <!-- to maek by defaulet checked use this checked  -->
+    byDeafulet check box :<input type="checkbox" name="MyCheckbox2" checked>
+    <br>
+    <div><label for="cars">car</label>
+        <select name="car" id="cars">
+            <option value="ind">indica</option>
+            <option value="swf" selected >sweft </option>
+        </select>
+    </div>
+    <div> <br>
+    <input type="submit" value="submit Now">
+    <input type="reset" value="Reset Now">
+    
+</div>
+</form>
+<!-- inline and block element -->
+<h2>inline and block element</h2>
+<p style="border: 2px solid red ">this is pharagraph and pharagraph is a block element </p>
+<div style="border: 2px solid red ">
+    <br style="border: 2px solid pink ">
+<span style="border: 2px solid blue">this is span 2Lorem ipsum dolor sit amet consectetur.</span>
+<span style="border: 2px solid blue">this is span 2Lorem  ipsum dolor sit amet consectetur.</span>
+</div>
+<div id="myHeader" style="border: 2px solid red "><h4>this is div tag its block element </h4></div> 
+<!-- entities -->
+<div class="container"><p>this is entitie &nbsp; &nbsp; &nbsp; pharagraph with 3 spaces  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit.</p>
+<p>this is entite s tag line print &lt;p&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro.</p>
+<p>pound is wrtiten like this &pound;</p>
+<p>copyright  is wrtiten like this &copy;</p>
+<p>emptycharacter is wrtiten like this &#8203;</p>
+<p>1by4 th  is wrtiten like this &frac14;</p>
+</div>
+
+
+</body>
+</html>
